@@ -1,17 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>11班网站暂时关闭</h1>
+
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
+echo "11班网站将于12月6日全部关闭,";
+echo "将在2021年7月重新开放。";
+$time1 = time();
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
+$time2 = strtotime("2021-6-7");
 
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+$time3 = strtotime("2021-6-7");
+
+$sub = ceil(($time2 - $time1)/3600);
+
+$sub2 = ceil(($time3 - $time1)/86400);
+
+ 
+
+
+
+echo "距离高考还有$sub2" . "天！" . '<br>';
+?>
+
+</body>
+</html>
